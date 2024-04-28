@@ -101,7 +101,7 @@ def bear_fauet_claim(address: List[str]):
             )
             while True:
                 proxies = get_one_proxy()
-                if claim_with_retry(index, addr, scraper, proxies):
+                if claim_with_retry(index, addr.rstrip('\n'), scraper, proxies):
                     break
                 time.sleep(3)
         logger.info('claim ended successfully')
