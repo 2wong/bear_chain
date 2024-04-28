@@ -127,7 +127,7 @@ def get_one_proxy():
         proxies = {'https': proxy_string, 'http': proxy_string}
         return proxies
     except BaseException:
-        traceback.print_exc()  # 显示异常信息
+        traceback.print_exc()
 
 
 if __name__ == '__main__':
